@@ -1,0 +1,13 @@
+require:
+  - rubocop-rspec
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+RSpec/FilePath:
+  CustomTransform:
+    QuickRB: quickrb
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
